@@ -12,23 +12,26 @@ import { createBrowserRouter, RouterProvider,Outlet } from "react-router-dom";
 import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
 import Collections from "./components/Collections";
+import { BrowserRouter as Router } from 'react-router-dom';
+
 //import HorizontalScroll from "./components/HorizantalScroll";
 
 const App = () =>{
     return(
+      <Router basename="/learning-react">
       <Provider store={appStore}>
         <div className="app">
             <Header />
             <Outlet />
         </div>
-      </Provider>
+      </Provider></Router>
     );
 };
 
 const appRouter = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element:  <App /> ,
     children:[
       {
         path:"/",
