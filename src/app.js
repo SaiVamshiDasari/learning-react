@@ -11,7 +11,8 @@ import Cart from "./components/Cart";
 import { createBrowserRouter, RouterProvider,Outlet } from "react-router-dom";
 import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
-import HorizontalScroll from "./components/HorizantalScroll";
+import Collections from "./components/Collections";
+//import HorizontalScroll from "./components/HorizantalScroll";
 
 const App = () =>{
     return(
@@ -48,6 +49,10 @@ const appRouter = createBrowserRouter([
       {
         path:"/restaurants/:resId",
         element:<Resmenu />,
+      },
+      {
+        path:"/collections/:collectionName",
+        element: <Collections />,
       },
     ],
     errorElement: <Error />

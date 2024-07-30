@@ -1,3 +1,4 @@
+@import "https://fonts.googleapis.com/css2?family=Lobster&display=swap";
 *, :before, :after {
   box-sizing: border-box;
   border: 0 solid #e5e7eb;
@@ -274,19 +275,29 @@ img, video {
   padding: 0;
 }
 
+.appname {
+  font-family: Lobster, cursive;
+  font-size: 24px;
+}
+
 .head {
-  border: .75px solid #000;
+  z-index: 1000;
+  background-color: #fff;
   justify-content: space-around;
   align-items: center;
   width: 100%;
   height: 10%;
   padding: 10px;
   display: flex;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 4px 8px #0000001a;
 }
 
 .head .logo-con {
   height: 100%;
   margin-left: 20px;
+  transform: scale(1.2);
 }
 
 .logo-con .logo {
@@ -328,6 +339,7 @@ img, video {
 }
 
 .grid-titile {
+  margin-left: 10%;
   font-family: Gilroy_Bold;
   font-size: 24px;
   font-weight: 800;
@@ -350,7 +362,22 @@ img, video {
   margin: 10px;
 }
 
-.body-con, .shi-con {
+.body-con {
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+  display: flex;
+}
+
+.coll-title {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 15%;
+  font-family: Gilroy_Bold;
+  font-size: 40px;
+}
+
+.shi-con {
   flex-wrap: wrap;
   justify-content: center;
   padding: 10px;
@@ -757,5 +784,48 @@ hr.first-seperation {
   margin-top: -7px;
   font-size: 12px;
   display: flex;
+}
+
+.itemdisplay {
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  height: 50px;
+  margin: auto;
+  display: flex;
+}
+
+.name-count {
+  justify-content: space-around;
+  width: 35%;
+  display: flex;
+}
+
+.cart-price-con {
+  justify-content: space-around;
+  align-items: center;
+  width: 35%;
+  height: 100%;
+  padding: 1px;
+  display: flex;
+}
+
+.cart-count-btn {
+  text-align: center;
+  text-transform: uppercase;
+  color: #1ba672;
+  background-color: #fff;
+  border: 1px solid #a7a6a6;
+  border-radius: 8px;
+  justify-content: space-around;
+  align-items: center;
+  width: 90px;
+  height: 35px;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  display: flex;
+  box-shadow: 0 8px 16px #0000001a;
 }
 /*# sourceMappingURL=index.9e4c6fd2.css.map */

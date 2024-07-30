@@ -35,7 +35,7 @@ const Resmenu = ()=>{
                         <h3 className="rating"><i className="fa-solid fa-star"></i>{avgRating}</h3>
                         <h3>{costForTwoMessage}</h3>
                     </div>
-                    <h3>{cuisines.join(", ")}</h3>
+                    {/*<h3>{cuisines.join(", ")}</h3>*/}
                 
                 <div className="delivery">
                     <h3>Estimated-time: {slaString}</h3>

@@ -14,7 +14,7 @@ const Header = ()=>{
                 </Link>
             </div>
             <div className="appname-con">
-                <h1 className="appname">Food Panda</h1>
+                <h1 className="appname">FOOD PANDA</h1>
             </div>
             <div className="nav-bar">
                 <ul>

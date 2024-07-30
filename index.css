@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 /*
 *{
     margin: 0;
@@ -455,29 +457,37 @@ hr.first-seperation{
   margin-bottom: 40px;
   width: 75%;
 }*/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box; /* Ensure box-sizing is border-box for all elements */
 }
 
-.app {
+.appname {
+    font-size: 24px;
+    font-family: 'Lobster', cursive;
     /* Styles for your app container */
 }
 
 .head {
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 10%; /* Adjust height as needed */
     width: 100%;
-    border: 0.75px solid black;
+    z-index: 1000; /* Ensures the header is on top */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     padding: 10px; /* Add padding for spacing */
+    background-color: white;
 }
 
 .head .logo-con {
     height: 100%;
     margin-left: 20px; /* Adjust margin for spacing */
+    transform: scale(1.2,1.2);
 }
 
 .logo-con .logo {
@@ -521,6 +531,7 @@ hr.first-seperation{
     font-size: 24px;
     font-family: Gilroy_Bold;
     font-weight: 800;
+    margin-left:10% ;
 }
 
 
@@ -544,6 +555,13 @@ hr.first-seperation{
     flex-wrap: wrap;
     justify-content: center;
     padding: 10px;
+}
+.coll-title{
+    font-size: 40px;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-bottom: 5%;
+    font-family: Gilroy_Bold;
 }
 
 .shi-con {
@@ -958,4 +976,46 @@ hr.first-seperation{
     color: white;
     font-size: 12px;
     margin-top: -7px;
+}
+.itemdisplay{
+    width: 70%;
+   height: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+.name-count{
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+}
+.cart-price-con{
+    display: flex;
+    width: 35%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1px;
+   
+}
+.cart-count-btn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90px;
+    height: 35px;
+    text-align: center;
+    border: 1px solid #a7a6a6;
+    background-color: white;
+    font-family: Gilroy;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: rgb(27, 166, 114);
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 16px 0px;
 }
